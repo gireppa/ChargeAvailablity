@@ -54,7 +54,7 @@ public class Charger {
         this.availableHours = availableHours;
     }
 
-    int chargerPlatformId; // Unique identifier for charger and should be a UUID OR String
-    double rate; // in kW
-    double availableHours;
+    private int chargerPlatformId; // Unique identifier for charger and should be a UUID OR String
+    private double rate; // in kW
+    private double availableHours;
 }

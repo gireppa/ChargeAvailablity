@@ -3,6 +3,12 @@ package main.com.chargepoint;
 import java.util.Objects;
 
 public class Charger {
+
+    
+    private int chargerPlatformId; // Unique identifier for charger and should be a UUID OR String
+    private double rate; // in kW
+    private double availableHours;
+    
     @Override
     public String toString() {
         return "Charger{" +
@@ -53,8 +59,4 @@ public class Charger {
         this.rate = rate;
         this.availableHours = availableHours;
     }
-
-    private int chargerPlatformId; // Unique identifier for charger and should be a UUID OR String
-    private double rate; // in kW
-    private double availableHours;
 }

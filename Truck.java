@@ -3,7 +3,9 @@ package main.com.chargepoint;
 import java.util.Objects;
 
 public class Truck {
-    int VehiclePlatformId; // Unique identifier for Vehicle(on chassis) and should be UUID || String
+    private int VehiclePlatformId; // Unique identifier for Vehicle(on chassis) and should be UUID || String
+    private double targetSoc;
+    private double soc;
 
     public int getVehiclePlatformId() {
         return VehiclePlatformId;
@@ -55,9 +57,6 @@ public class Truck {
         this.targetSoc = targetSoc;
         this.soc = soc;
     }
-
-    double targetSoc;
-    double soc;
 
     double neededCharge() {
         return targetSoc - soc;
